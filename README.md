@@ -20,3 +20,7 @@ docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  va
 
 1. I did several assumptions to avoid asking to clarify some FRs
 2. I'm not all handling potential failures, time constraint.
+
+
+## CI / CD pipeline
+![cicd image](e-challenge-cicd.png)
