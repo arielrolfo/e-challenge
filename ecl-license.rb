@@ -32,6 +32,11 @@ end
 
 storage_file_set = false
 
+if ARGV[0] == "get" && ARGV.length == 1
+  $stdout.reopen("/share/stdout", "w")
+  $stderr.reopen("/share/stdout", "w")
+end
+
 if ARGV[0] == "get" && ARGV.length == 2
   $stdout.reopen("/share/stdout", "w")
   $stderr.reopen("/share/stdout", "w")
