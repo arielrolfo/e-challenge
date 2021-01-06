@@ -21,12 +21,14 @@ docker build . -t ecl-license
 ## Execution instructions
 - validate:
 ```
-docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  validate [key_to_check] [file:optional]
+docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  validate [key_to_check] [file (optional) ]
 ```
 - get:
 ```
-docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  validate [key_to_check] [file:optional]
+docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  get registry.txt
 ```
+**NOTE: upon `docker run ...` the output
+
 
 ##  Disclaimers  :)  
 
