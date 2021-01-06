@@ -1,6 +1,9 @@
 #!/usr/bin/ruby
 require 'securerandom'
 
+$stdout.reopen("/share/stdout", "w")
+$stderr.reopen("/share/stdout", "w")
+
 ## a bit of input params vaidation #########################
 if ARGV.length < 1
   puts "at least 1 argument is required"
