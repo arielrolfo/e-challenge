@@ -26,8 +26,10 @@ docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  va
 - get:
 ```
 docker run --rm  --mount type=bind,source="$(pwd)",target=/share ecl-license  get registry.txt
+
+    **NOTE: upon `docker run ...` execution the standard output has been redirected to 'stdout' file 
 ```
-**NOTE: upon `docker run ...` the output
+
 
 
 ##  Disclaimers  :)  
